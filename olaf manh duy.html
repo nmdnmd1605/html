@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Olaf||Nguyen Manh Duy 16052001@ </title>
+	<style>
+	#olaf1 p a{
+	  text-decoration:none;
+	  color:green;
+	  margin-right:170px;
+	  padding-left: 100px;
+	  line-height:50px;
+
+	}
+	#olaf1 p{
+	  display:inline;
+	}
+	#olaf1{
+	  border:2px solid black;
+	  height:50px;
+	  border-radius:20px;
+	  background-color:gray;
+	}
+	#olaf1 p a button{
+	  border-radius:5px;
+	  background:green;
+	  color:white;
+	}
+	#olaf2 p img{
+	  border-radius:130px;
+	  height:250px;
+	  width:250px;
+	  transform:scale(1.0);
+	}
+	#olaf2 p img:hover{
+	  transform:scale(1.1);
+	}
+	#olaf2 h2{
+	  padding-left:530px;
+	  border-bottom:2px solid green;
+	}
+	#olaf2 p{
+	  text-align:center;
+	}
+	#olaf2q{
+	  display:none;
+	}
+	#olaf2 button{
+	  height:40px;
+	  color:red;
+	  border-radius:30px;
+	}
+	#olaf2w {
+	  height:40px;
+	  color:red;
+	  border-radius:30px;
+	  margin-left: 300px;
+	  display:none;
+	}
+	#olaf2e{
+	  height:40px;
+	  color:red;
+	  border-radius:30px;
+	  margin-left: 500px;
+	  display:none;
+	}
+	#olaf3{
+	  color:gray;
+	  font-size:30px;
+	  height:100px;
+	  width:500px;
+	  font-family:'font-name';
+	  margin-left: 700px;
+	}
+	</style>
+  </head>
+  <body>
+  <div id="olaf1">
+   <p><a ><button onclick="linkk()">Link FaceBook Manh Duy @!@</button></a></p>
+   <p><a ><button onclick="linkk1()">Link Shop Ha Tieu Phu!!</button></a></p>
+   <p><a ><button onclick="linkk2()">Link Con Nghien!!!</button></a></p>
+  </div>
+  <div id="olaf2">
+    <p><img onmouseover="linkk3()" onmouseout="linkk4()" src="./olaf4.jpg" /></p>
+	<p id="olaf2q">CON NGHIEN MS DI CHUOT VAO DAY!!</p>
+	<h2>Chien Binh Dien Cuong!!</h2>
+	<button onclick=" linkk5()">An Vao Day Ban Se Nhan Dc 1 Dieu Dac Biet</button>
+	<button id="olaf2w" onclick=" linkk6()">An Tiep Cai Nay Nua Ne!</button>
+	<button id="olaf2e" onclick=" linkk7()">An Not Lan Nay Nua Thoi@</button>
+  </div>
+  <div id="olaf3"></div>
+  <script>
+     function linkk(){
+	  window.location.href = 'https:/www.facebook.com/profile.php?id=100011411611205';
+	 }
+	 function linkk1(){
+	  window.location.href = 'https:/shophatieuphu.com/';
+	 }
+	 function linkk2(){
+	  window.location.href = 'https:/www.facebook.com/profile.php?id=100018842948017';
+	 }
+	 function linkk3(){
+	  document.getElementById('olaf2q').style.display='block';
+	 }
+	 function linkk4(){
+	  document.getElementById('olaf2q').style.display='none';
+	 }
+	 function linkk5(){
+	  document.getElementById('olaf2w').style.display='block';
+	 }
+	 function linkk6(){
+	  document.getElementById('olaf2e').style.display='block';
+	 }
+	 var so=10;
+	 function linkk7(){
+	 so--;
+	 if(so == 0){
+	  document.getElementById('olaf3').innerHTML="Co Cai Dau Buoi Y Nha!!";
+	             }else{
+	                   document.getElementById('olaf3').innerHTML = so;
+	                   setTimeout('linkk7()',1000);
+	                   }
+	 }
+  </script>
+  </body>
+</html>
